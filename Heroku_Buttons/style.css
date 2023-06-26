@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Rubik+Puddles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+body {
+    min-height: 100%;
+    min-width: 950px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3F3F44;
+}
+/* ---------- header ---------- */
+header {
+    background: linear-gradient(to right, #403670, #6B479A);;
+    color: #fff;
+}
+header>menu{
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items:center;
+}
+.container,
+.menu-right,
+.log-in,
+.start-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header menu a {
+  text-decoration: none;
+  color: #fff;
+  width: 280px;
+  font-weight: 300;
+}
+header menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container > ul a {
+  color: #ffffff71;
+  transition: 0.2s ease-in-out;
+}
+.container > ul a:hover {
+  color: #fff;
+}
+.heroku-icon {
+  width: 40px;
+}
+.start-page {
+  max-width: 160px;
+}
+.start-page span {
+  font-size: 25px;
+  font-weight: 700;
+}
+/* search */
+.search {
+  background: #ffffff17;
+  color: #ffffff71;
+  padding: 7px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.search > input {
+  border: none;
+  background: none;
+  color: #fff;
+}
+.search > input::placeholder {
+  color: #fff;
+}
+.search > input:focus {
+  outline: none;
+}
+/* log in buttons */
+.log-in {
+  justify-content: end;
+  margin-left: 10px;
+}
+.log-in > a {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  color: #ffffff71;
+  transition: 0.2s ease-in-out;
+}
+.log-in a:hover {
+  color: #fff;
+}
+.log-in > p {
+  color: #ffffff28;
+}
+a.sing-up {
+  border-radius: 5px;
+  background: #523b7c9c;
+  color: #fff;
+}
+.sing-up:hover {
+  background: #48346e;
+}
+
+/* banner */
+.banner {
+  text-align: center;
+  padding: 56px 20px 80px;
+}
+.banner i {
+  font-size: 70px;
+  color: #ffffff71;
+}
+.banner h1 {
+  font-size: 45px;
+  font-weight: 400;
+  margin: 10px;
+}
+.banner h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff71;
+}
+/* ---------- main ---------- */
+#main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1260px;
+}
+.heroku-featured-buttons,
+.all-buttons {
+  margin: 50px;
+}
+.category-label {
+  border-bottom: 1px solid #4d4b4b57;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  gap: 5px;
+  margin: 30px 0px;
+  max-width: 1200px;
+}
+
+/* ---------- card ----------- */
+
+.card {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  height: 220px;
+  max-width: 285px;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+}
+.card:hover {
+  border: 1px solid #56428d;
+}
+.brand {
+  padding: 20px;
+}
+.brand-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.line {
+  width: 100%;
+  margin: 15px 0px;
+}
+.brand-text {
+  font-size: 13px;
+}
+
+.stats {
+  position: absolute;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background: #f8f8fa;
+  justify-content: start;
+  gap: 15px;
+  padding: 10px;
+}
+.violet-stats {
+  position: absolute;
+  left: 90%;
+}
+
+/* ---------- footer ---------- */
+.sub-footer ul li a,
+.footer-links ul li a {
+  text-decoration: none;
+  color: #7b7a7c;
+}
+.sub-footer ul li a:hover,
+.footer-links ul li a:hover {
+  color: #3f3f44;
+}
+
+/* sub-footer */
+.sub-footer {
+  background: #f7f7f7;
+}
+
+.sub-footer ul {
+  height: 70px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+/* wrapper */
+.wrapper {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  padding: 50px 30px;
+}
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* sotial */
+.footer-social {
+  flex: 1;
+}
+.footer-social h4 {
+  color: #62509b;
+  margin: 0px 20px 20px 0px;
+  font-weight: 400;
+}
+.footer-social h5 {
+  margin-bottom: 10px;
+  color: #7b7a7c;
+  font-weight: 400;
+}
+
+.email-address {
+  background: #fff;
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #9b9b9b96;
+  border-radius: 2px;
+  padding: 7px;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+.email-address input {
+  border: none;
+  outline: none;
+  background: inherit;
+  flex: 7;
+}
+.email-address button {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: #62509b;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.footer-social ul {
+  border-top: 1px solid #9b9b9b96;
+  padding-top: 20px;
+  display: flex;
+  font-size: 23px;
+  justify-content: start;
+  gap: 5px;
+}
+.footer-social ul li a {
+  color: #9b9b9b;
+}
+.footer-social ul li a:hover {
+  color: #62509b;
+}
+/* tertiary */
+.tertiary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100px;
+}
+.tertiary > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #3f3f44;
+  font-size: 11px;
+  font-weight: 700;
+}
+.cookie ul {
+  display: flex;
+  gap: 10px;
+}
+.cookie ul li a {
+  color: #3f3f44;
+}
