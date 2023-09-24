@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Стили для заголовка */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Стили для текстовых полей ввода */
+input[type="text"] {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Стили для кнопки Войти */
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Стили для сообщения о валидации */
+#error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 16px;
+}
