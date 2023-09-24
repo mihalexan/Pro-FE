@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>User Card</title>
+  </head>
+  <body>
+    <div class="user-card">
+      <h1>User Info</h1>
+    </div>
+    <div class="user-info">
+      <div class="field">
+        <span>Name:</span>
+        <input type="text" id="name" disabled />
+        <i class="fa fa-pencil edit-icon" onclick="editField('name')"></i>
+      </div>
+      <div class="field">
+        <span>Email:</span>
+        <input type="email" id="email" disabled />
+        <i class="fa fa-pencil edit-icon" onclick="editField('email')"></i>
+      </div>
+      <div class="field">
+        <span>Website:</span>
+        <input type="text" id="website" disabled />
+        <i class="fa fa-pencil edit-icon" onclick="editField('website')"></i>
+      </div>
+      <div class="navigation">
+        <button onclick="fetchUserData(1)">></button>
+        <button onclick="fetchUserData(-1)"><</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
