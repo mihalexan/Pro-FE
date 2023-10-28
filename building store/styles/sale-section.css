@@ -1,0 +1,70 @@
+.sale-section {
+  background: #a1e2eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 650px;
+  border: 1px solid #ffffff;
+}
+
+/* Стили для левой стороны (left-side) */
+.left-side {
+  flex: 1;
+}
+
+.left-side .text {
+  text-align: left;
+}
+.left-side h1 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 80px;
+}
+.left-side h2 {
+  margin-top: 0;
+  font-size: 60px;
+  color: #ffffff;
+}
+.left-side .buttons {
+  display: flex;
+  justify-content: left;
+  align-items: left; /* Выравнивание по центру по вертикали */
+  gap: 10px; /* Увеличиваем расстояние между кнопками */
+  margin-top: 40px;
+}
+
+.sale-button,
+.detailed {
+  background-color: #a1e2eb;
+  color: white;
+  border: 2px solid white; /* Добавляем белую рамку */
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px; /* Добавляем отступ между кнопками*/
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Плавные изменения при наведении */
+}
+
+/* Стили для правой стороны (right-side) */
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.sale-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.sale-button:hover,
+.detailed:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}

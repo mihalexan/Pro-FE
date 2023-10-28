@@ -1,0 +1,104 @@
+/* Стили для Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+}
+
+header {
+  background-color: white;
+  color: black;
+  padding: 40px 0;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.left-menu {
+  display: flex;
+  align-items: center;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+}
+
+#catalog-button {
+  background-color: #339933;
+  color: white;
+  border: none;
+  padding: 11px 25px;
+  margin-left: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Плавные изменения при наведении */
+}
+
+#catalog-button:hover {
+  transform: scale(1.1); /* Увеличение размера кнопки при наведении */
+  background-color: rgb(115, 186, 10); /* Изменение цвета фона при наведении */
+  color: #fff; /* Изменение цвета текста при наведении */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none; /* Убираем подчеркивание с ссылок */
+  color: #000; /* Цвет текста по умолчанию */
+  transition: color 0.3s, font-size 0.3s; /* Плавное изменение цвета и размера текста */
+}
+
+nav ul li a:hover {
+  color: #339933; /* Изменяем цвет текста при наведении на зеленый (#00b300) */
+  font-size: 18px; /* Увеличиваем размер текста при наведении */
+}
+
+.right-menu img {
+  width: 26px; /* Устанавливаем желаемую ширину иконки */
+  margin-left: 100px; /* Добавляем больший отступ слева от иконки */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.right-menu img:hover {
+  transform: scale(
+    1.2
+  ); /* Увеличиваем размер изображения в 1.2 раза при наведении */
+  filter: brightness(1.2); /* Увеличиваем яркость изображения при наведении */
+}
+
+.left-menu img {
+  width: 40px;
+  transition: transform 0.3s, filter 0.3s; /* Плавное изменение размера и цвета */
+}
+.left-menu img:hover {
+  transform: scale(
+    1.2
+  ); /* Увеличиваем размер изображения в 1.2 раза при наведении */
+  filter: brightness(1.2); /* Увеличиваем яркость изображения при наведении */
+}

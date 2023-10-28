@@ -1,0 +1,55 @@
+.discount-container {
+  background-image: linear-gradient(to right, #006300, #339933);
+  height: 476px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discount-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.left-side-img {
+  margin-right: 20px;
+  text-align: left;
+}
+.left-side-img img {
+  height: auto;
+}
+.right-side-text {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 90px;
+  color: white;
+  margin: 0;
+}
+h2 {
+  font-size: 50px;
+  margin: 5px 0;
+  color: white;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #339933;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+button:hover {
+  background-color: #006300;
+}
