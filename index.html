@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Store</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sale-section.css" />
+    <link rel="stylesheet" href="styles/categories.css" />
+    <link rel="stylesheet" href="styles/discount.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Первая часть: Закрепленное сверху меню -->
+      <div class="top-menu">
+        <div class="left-menu">
+          <img src="pictures/image1.png" alt="" />
+          <button id="catalog-button">Каталог</button>
+        </div>
+        <div class="right-menu">
+          <nav>
+            <ul>
+              <li><a href="#">Категории</a></li>
+              <li><a href="#">Купоны</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <img src="pictures/bag.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Вторая часть: Содержимое страницы (контент)-->
+      <div class="sale-section">
+        <div class="left-side">
+          <div class="text">
+            <h1>Распродажа</h1>
+            <h2>в честь нового сезона</h2>
+          </div>
+          <div class="buttons">
+            <button class="sale-button">Все акции</button>
+            <button class="detailed">Подробнее</button>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="image-container">
+            <img
+              src="pictures/image2.png"
+              alt="изображение"
+              class="sale-image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="top">
+          <h3>Категории</h3>
+          <button class="show-categories" onclick="toggleFullList()">
+            Все категории
+          </button>
+        </div>
+        <div class="category-list">
+          <div class="category">
+            <img
+              src="pictures/удобрения.png"
+              alt="Удобрения"
+              width="318"
+              height="350"
+            />
+            <span>Удобрения</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/средства-защиты-и-септики.png"
+              alt="Средства защиты"
+              width="318"
+              height="350"
+            />
+            <span>Средства защиты</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/посадочный-материал.png"
+              alt="Посадочный материал"
+              width="318"
+              height="350"
+            />
+            <span>Посадочный материал</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/инструменты-и-инвентарь.png"
+              alt="Инструменты"
+              width="318"
+              height="350"
+            />
+            <span>Инструменты</span>
+          </div>
+        </div>
+        <div class="full-list" id="fullList" style="display: none">
+          <!-- Начальное скрытие элемента -->
+          <div class="category">
+            <img
+              src="pictures/товары-для-дома.png"
+              alt="Товары для дома"
+              width="318"
+              height="350"
+            />
+            <span>Товары для дома</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/горшки-и-кашпо.png"
+              alt="Горшки и кашпо"
+              width="318"
+              height="350"
+            />
+            <span>Горшки и кашпо</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/для-комнатных-растений.png"
+              alt="Для комнатных растений"
+              width="318"
+              height="350"
+            />
+            <span>Для комнатных растений</span>
+          </div>
+          <div class="category">
+            <img
+              src="pictures/садовые-фигуры.png"
+              alt="Садовые фигуры"
+              width="318"
+              height="350"
+            />
+            <span>Садовые фигуры</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="discount-container">
+        <div class="discount-content">
+        <div class="left-side-img">
+          <img src="pictures/гном.png" alt="" />
+        </div>
+        <div class="right-side-text">
+          <h1>Скидка 5%</h1>
+          <h2>на первый заказ</h2>
+          <input type="text" placeholder="+7 ...">
+          <button>Получить скидку</button>
+         </div>
+        </div>
+      </div>
+
+
+    </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
